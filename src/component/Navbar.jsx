@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { BsCart2 } from "react-icons/bs";
 import { IoCartOutline } from "react-icons/io5";
 
 
-const Navbar = () => {
+const Navbar = ({countNumber}) => {
     return (
         <div className="w-11/12 mx-auto">
             <div className="navbar bg-base-100 ">
@@ -35,7 +36,10 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <a><BsCart2 /></a>
+                    <div className="relative">
+                        <a  ><BsCart2 /></a>
+                        {countNumber.length>0 &&<p className="rounded-full bg-red-600 absolute -top-2 left-2 text-amber-100 w-3 h-4 text-[12px] text-center">{countNumber.length}</p>}
+                    </div>
                     <a className="font-bold">Login</a>
                     <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white ">Button</a>
                 </div>

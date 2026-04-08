@@ -12,16 +12,17 @@ import Workflow from './component/Workflow'
 
 const datas = fetch('/Data.json').then(res=>res.json())
 
-// const [countNumber, setcountNumber]= useState(0)
 
 function App() {
+  const [countNumber, setcountNumber]= useState([])
+  console.log(countNumber)
 
   return (
       <>
-        <Navbar></Navbar>
+        <Navbar countNumber={countNumber}></Navbar>
         <Hero/>
         <Linebar/>
-        <Cardsection Datas={datas}/>
+        <Cardsection Datas={datas} setcountNumber={setcountNumber} countNumber={countNumber}/>
         <StartSection/>
         <PricingCard/>
         <Workflow/>

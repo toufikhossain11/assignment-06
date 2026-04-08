@@ -11,7 +11,7 @@ import {
   FaBullseye
 } from "react-icons/fa";
 
-const Cards = ({data}) => {
+const Cards = ({data,setcountNumber,countNumber}) => {
          const icons = {
   FaFileAlt,
   FaLaptopCode,
@@ -26,12 +26,14 @@ const Cards = ({data}) => {
 };
 
 const IconComponent = icons[data.icon];
-    const SubcribeBtn =()=>{
-
+// console.log(data)
+    const SubcribeBtn =(data)=>{
+       setcountNumber ([...countNumber,data])
+        // console.log(data.name)
     }
     return (
         <div className=' '>
-                <div className="card w-80 h-95 bg-base-100 shadow-lg border ">
+                <div className="card w-80 h-99 bg-base-100 shadow-lg border ">
                     <div className="card-body">
                         <span className=" w-28 ml-40 font-bold text-center bg-amber-300 rounded-3xl">{data.tag}</span>
                        
@@ -57,7 +59,7 @@ const IconComponent = icons[data.icon];
                         </ul>
                         <div className="mt-6">
                             <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl"
-                            onClick={()=>SubcribeBtn()}
+                            onClick={SubcribeBtn}
                             >Subscribe</button>
                         </div>
                     </div>
