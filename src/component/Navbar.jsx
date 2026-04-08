@@ -5,7 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 const Navbar = () => {
     return (
         <div className="w-11/12 mx-auto">
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const Navbar = () => {
                             <li><a>FAQ</a></li>
                         </ul>
                     </div>
-                    <a className=" font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-2xl cursor-pointer">Digitools</a>
+                    <a className=" font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-2xl cursor-pointer">Digitools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <div className="navbar-end gap-3">
                     <a><BsCart2 /></a>
                     <a className="font-bold">Login</a>
-                    <a className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white ">Button</a>
+                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white ">Button</a>
                 </div>
             </div>
         </div>

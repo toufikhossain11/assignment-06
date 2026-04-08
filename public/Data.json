@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with modern templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FaFileAlt",
+    "image": "https://source.unsplash.com/featured/?resume"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Maker",
+    "description": "Build a stunning personal portfolio website easily.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Custom domains", "SEO friendly", "Drag & drop builder"],
+    "icon": "FaLaptopCode",
+    "image": "https://source.unsplash.com/featured/?portfolio,website"
+  },
+  {
+    "id": 3,
+    "name": "LinkedIn Booster",
+    "description": "Optimize your LinkedIn profile for better visibility.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Profile analysis", "Keyword suggestions", "Content ideas"],
+    "icon": "FaLinkedin",
+    "image": "https://source.unsplash.com/featured/?linkedin,career"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker",
+    "description": "Track your job applications in one place.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Interview reminders", "Status updates"],
+    "icon": "FaBriefcase",
+    "image": "https://source.unsplash.com/featured/?job,office"
+  },
+  {
+    "id": 5,
+    "name": "Cover Letter Generator",
+    "description": "Generate tailored cover letters instantly.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["AI writing", "Custom templates", "Export options"],
+    "icon": "FaPenFancy",
+    "image": "https://source.unsplash.com/featured/?writing,letter"
+  },
+  {
+    "id": 6,
+    "name": "Interview Prep Kit",
+    "description": "Practice and prepare for job interviews effectively.",
+    "price": 14.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Mock interviews", "Common Q&A", "Expert tips"],
+    "icon": "FaMicrophone",
+    "image": "https://source.unsplash.com/featured/?interview,meeting"
+  },
+  {
+    "id": 7,
+    "name": "Skill Tracker",
+    "description": "Track and improve your professional skills.",
+    "price": 3.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Progress tracking", "Skill roadmap", "Analytics"],
+    "icon": "FaChartLine",
+    "image": "https://source.unsplash.com/featured/?analytics,skills"
+  },
+  {
+    "id": 8,
+    "name": "Freelancer Toolkit",
+    "description": "All-in-one toolkit for freelancers.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Invoice generator", "Client manager", "Project tracker"],
+    "icon": "FaTools",
+    "image": "https://source.unsplash.com/featured/?freelancer,workspace"
+  },
+  {
+    "id": 9,
+    "name": "Email Signature Creator",
+    "description": "Design professional email signatures.",
+    "price": 2.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom design", "Social links", "HTML export"],
+    "icon": "FaEnvelope",
+    "image": "https://source.unsplash.com/featured/?email,signature"
+  },
+  {
+    "id": 10,
+    "name": "Career Growth Plan",
+    "description": "Plan and achieve your career goals faster.",
+    "price": 12.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Goal setting", "Mentorship tips", "Progress insights"],
+    "icon": "FaBullseye",
+    "image": "https://source.unsplash.com/featured/?career,goal"
+  }
+]
