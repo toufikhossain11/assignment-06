@@ -29,7 +29,7 @@ const StartSection = () => {
                     <p className='text-center rounded-full border  mb-5 ml-50 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-1 font-bold w-9'>02</p>
                     <img className='w-18 bg-[#5641725e] rounded-full p-2' src={Package} alt="" />
                     <h2 className="text-xl font-bold">Choose Products</h2>
-                    <p className='text-[#627382] text-[13px]'>Browse our catalog and select the tools that fit your needs.</p>
+                    <p className='text-[#627382] text-[13px]'>Browse our catalog and select the tools that fit your needs</p>
                     
                 </div>
             </div>
