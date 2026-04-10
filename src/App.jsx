@@ -9,6 +9,7 @@ import Navbar from './component/Navbar'
 import PricingCard from './component/PricingCard'
 import StartSection from './component/StartSection'
 import Workflow from './component/Workflow'
+import { ToastContainer } from 'react-toastify'
 
 const datas = fetch('/Data.json').then(res=>res.json())
 
@@ -27,6 +28,7 @@ function App() {
         <PricingCard/>
         <Workflow/>
         <Footer/>
+        <ToastContainer />
       </>
 
   )

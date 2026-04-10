@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaFileAlt,
   FaLaptopCode,
@@ -10,6 +11,7 @@ import {
   FaEnvelope,
   FaBullseye
 } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Cards = ({data,setcountNumber,countNumber}) => {
          const icons = {
@@ -26,16 +28,32 @@ const Cards = ({data,setcountNumber,countNumber}) => {
 };
 
 const IconComponent = icons[data.icon];
-// console.log(data)
-    const SubcribeBtn =(data)=>{
+    const [isBuy,setisBuy]= useState();
+
+    const BuyBtn =()=>{
        setcountNumber ([...countNumber,data])
-        console.log(data)
+        setisBuy(true);
+        toast.success(`${data.name} Is Buy`)
+
     }
+    const getTagStyle = (tag) => {
+  switch (tag) {
+    case "new":
+      return "bg-[#DBFCE7] text-[#0A883E]";
+    case "best seller" :
+      return "bg-[#FEF3C6] text-[#BB4D00]";
+    case "popular":
+      return "bg-[#E1E7FF] text-[#4F39F6]";
+    default:
+      return "bg-gray-200";
+  }
+};
     return (
         <div className=' '>
-                <div className="card w-80 h-99 bg-base-100 shadow-lg border ">
+                <div className="card w-80 h-99 bg-[#f6f8fc] shadow-lg border border-base-300 ">
                     <div className="card-body">
-                        <span className=" w-28 ml-40 font-bold text-center bg-amber-300 rounded-3xl">{data.tag}</span>
+                        <span className={`w-22 p-1 ml-45 font-bold text-center rounded-3xl ${getTagStyle(data.tag)}`}>{data.tag}</span>
+                        
                        
                         <IconComponent />
                         
@@ -59,8 +77,9 @@ const IconComponent = icons[data.icon];
                         </ul>
                         <div className="mt-6">
                             <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl"
-                            onClick={()=>SubcribeBtn(data)}
-                            >Subscribe</button>
+                            onClick={BuyBtn}
+                            disabled={isBuy}
+                            >{isBuy?'Already Buy':'Buy Now'}</button>
                         </div>
                     </div>
                 </div>

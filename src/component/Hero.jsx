@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
 
             <div className=''>
-                <img className='h-120' src={Bannar} alt="" />
+                <img className='h-120 shadow-lg  border-base-300' src={Bannar} alt="" />
                 
             </div>
         </div>

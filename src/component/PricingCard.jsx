@@ -10,7 +10,7 @@ const PricingCard = () => {
                 
             </div>
             <div className='lg:flex justify-center pt-8 space-y-5  '>
-                <div className="card w-80 h-90 bg-base-100 shadow-lg py-4 border  justify-center mx-auto rounded-2xl">
+                <div className="card w-80 h-90  py-4 bg-[#f6f8fc] shadow-lg border border-base-300  justify-center mx-auto rounded-2xl">
                     <div className="card-body">
                        
                             <h2 className="text-3xl font-bold">Starter</h2>
@@ -81,7 +81,7 @@ const PricingCard = () => {
                     </div>
                 </div>
 
-                <div className="card w-80 h-90 bg-base-100 shadow-lg py-4 border justify-center mx-auto rounded-2xl">
+                <div className="card w-80 h-90   py-4 bg-[#f6f8fc] shadow-lg border border-base-300 justify-center mx-auto rounded-2xl">
                     <div className="card-body ">
                        
                             <h2 className="text-3xl font-bold">Enterprise</h2>

@@ -5,7 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Navbar = ({countNumber}) => {
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="w-11/12 mx-auto shadow-md border border-base-300">
             <div className="navbar bg-base-100 ">
                 <div className="navbar-start">
                     <div className="dropdown">
