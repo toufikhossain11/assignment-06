@@ -1,17 +1,6 @@
 import React, { use, useState } from 'react';
 import Cards from './Cards';
-import {
-  FaFileAlt,
-  FaLaptopCode,
-  FaLinkedin,
-  FaBriefcase,
-  FaPenFancy,
-  FaMicrophone,
-  FaChartLine,
-  FaTools,
-  FaEnvelope,
-  FaBullseye
-} from "react-icons/fa";
+
 import CartCard from './CartCard';
 
 
@@ -35,9 +24,12 @@ const Cardsection = ({Datas,setcountNumber,countNumber}) => {
                 </div>
             </div>
 
-            <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-4 justify-center items-center lg:mx-20'>
+            <div className='grid sm:grid-cols-1 lg:grid-cols-3 gap-4 justify-center items-center lg:mx-20 w-11/12 mx-auto'>
                 {selectbtn === 'products' ?
-            data.map(d=><Cards key={d.id} data={d} setcountNumber={setcountNumber} countNumber={countNumber}></Cards>): <CartCard></CartCard>}
+            data.map(d=><Cards key={d.id} data={d} 
+                setcountNumber={setcountNumber} countNumber={countNumber}></Cards>): <CartCard countNumber={countNumber}
+            setcountNumber={setcountNumber}
+            ></CartCard>}
             </div>
 
         </div>

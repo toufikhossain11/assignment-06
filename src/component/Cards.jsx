@@ -29,7 +29,7 @@ const IconComponent = icons[data.icon];
 // console.log(data)
     const SubcribeBtn =(data)=>{
        setcountNumber ([...countNumber,data])
-        // console.log(data.name)
+        console.log(data)
     }
     return (
         <div className=' '>
@@ -59,7 +59,7 @@ const IconComponent = icons[data.icon];
                         </ul>
                         <div className="mt-6">
                             <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl"
-                            onClick={SubcribeBtn}
+                            onClick={()=>SubcribeBtn(data)}
                             >Subscribe</button>
                         </div>
                     </div>
