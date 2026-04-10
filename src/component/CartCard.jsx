@@ -32,7 +32,7 @@ const hendelDelete = (count)=>{
 
                     <div>
                         <h2 className="card-title"> {count.name}</h2>
-                        <p>${count.price}</p>
+                        <p className='font-extrabold'>${count.price}</p>
                     </div>
                 </div>
 
@@ -43,8 +43,8 @@ const hendelDelete = (count)=>{
 
             {countNumber.length > 0 && <div className='space-y-3'>
                 <div className='flex justify-between border shadow-lg border-base-300 rounded-2xl p-6 '>
-                    <p>Total</p>
-                    <p>${totalPrice}</p>
+                    <p className='font-extrabold text-xl'>Total</p>
+                    <p className='font-extrabold text-xl'>${totalPrice}</p>
                 </div>
                 <button onClick={()=>checkoutbtn()} className=' btn bg-purple-900 rounded-4xl w-full text-center text-white'>Proceed to Checkout</button>
             </div>}

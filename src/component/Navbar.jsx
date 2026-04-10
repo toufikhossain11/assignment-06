@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { BsCart2 } from "react-icons/bs";
 import { IoCartOutline } from "react-icons/io5";
 
@@ -14,25 +14,25 @@ const Navbar = ({countNumber}) => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Products</a></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                            <li ><a >Products</a></li>
                             <li>
                                 <a>Features</a> </li>
                             <li><a>Pricing</a></li>
                             <li><a>Testimonials</a></li>
-                            <li><a>FAQ</a></li>
+                            <li ><a >FAQ</a></li>
                         </ul>
                     </div>
                     <a className=" font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-2xl cursor-pointer">Digitools</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Products</a></li>
+                        <li><a className="text-[16px]">Products</a></li>
                         <li>
-                            <a>Features</a> </li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Testimonials</a></li>
-                        <li><a>FAQ</a></li>
+                            <a className="text-[16px]">Features</a> </li>
+                        <li><a className="text-[16px]">Pricing</a></li>
+                        <li><a className="text-[16px]">Testimonials</a></li>
+                        <li><a className="text-[16px]">FAQ</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
